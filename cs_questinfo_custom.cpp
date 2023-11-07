@@ -249,32 +249,31 @@ public:
 
 #pragma region queststarter/ender
         QuestRelations* relationCreatureStarterMap = sObjectMgr->GetCreatureQuestRelationMapHACK();
-        QuestRelations* relationCreatureEnderMap = sObjectMgr->GetCreatureQuestInvolvedRelationMapHACK();
         QuestRelations* relationGOStarterMap = sObjectMgr->GetGOQuestRelationMapHACK();
-        QuestRelations* relationGOEnderMap = sObjectMgr->GetGOQuestInvolvedRelationMapHACK();
+        /*QuestRelations* relationCreatureEnderMap = sObjectMgr->GetCreatureQuestInvolvedRelationMapHACK();
+        QuestRelations* relationGOEnderMap = sObjectMgr->GetGOQuestInvolvedRelationMapHACK();*/
 
         const QuestRelationsIt creatureStarterIt = FindQuestEnderAndStarter(relationCreatureStarterMap, quest->GetQuestId());
-        const QuestRelationsIt creatureEnderIt = FindQuestEnderAndStarter(relationCreatureEnderMap, quest->GetQuestId());
         const QuestRelationsIt GOStarterIt = FindQuestEnderAndStarter(relationGOStarterMap, quest->GetQuestId());
-        const QuestRelationsIt GOEnderIt = FindQuestEnderAndStarter(relationGOEnderMap, quest->GetQuestId());
+        /*const QuestRelationsIt creatureEnderIt = FindQuestEnderAndStarter(relationCreatureEnderMap, quest->GetQuestId());
+        const QuestRelationsIt GOEnderIt = FindQuestEnderAndStarter(relationGOEnderMap, quest->GetQuestId());*/
 
         if (creatureStarterIt != relationCreatureStarterMap->end())
             handler->PSendSysMessage(LANG_QUESTINFO_CREATURE_STARTER, creatureStarterIt->first);
-        if (creatureEnderIt != relationCreatureEnderMap->end())
-            handler->PSendSysMessage(LANG_QUESTINFO_CREATURE_ENDER, creatureEnderIt->first);
         if (GOStarterIt != relationGOStarterMap->end())
             handler->PSendSysMessage(LANG_QUESTINFO_GO_STARTER, GOStarterIt->first);
+        /*if (creatureEnderIt != relationCreatureEnderMap->end())
+            handler->PSendSysMessage(LANG_QUESTINFO_CREATURE_ENDER, creatureEnderIt->first);
         if (GOEnderIt != relationGOEnderMap->end())
-            handler->PSendSysMessage(LANG_QUESTINFO_GO_ENDER, GOEnderIt->first);
+            handler->PSendSysMessage(LANG_QUESTINFO_GO_ENDER, GOEnderIt->first);*/
+
 #pragma endregion
 
-       
-        if (target)handler->PSendSysMessage(LANG_QUESTINFO_STATUS, target->GetQuestStatus(quest->GetQuestId()), EnumUtils::ToTitle(target->GetQuestStatus(quest->GetQuestId())));
-
+        /*if (target)handler->PSendSysMessage(LANG_QUESTINFO_STATUS, target->GetQuestStatus(quest->GetQuestId()), EnumUtils::ToTitle(target->GetQuestStatus(quest->GetQuestId())));
         handler->PSendSysMessage(LANG_QUESTINFO_FLAGS, quest->GetFlags());
         for (QuestFlags flag : EnumUtils::Iterate<QuestFlags>())
             if (quest->HasFlag(flag))
-                handler->PSendSysMessage("* %s (0x%X)", EnumUtils::ToTitle(flag), flag);
+                handler->PSendSysMessage("* %s (0x%X)", EnumUtils::ToTitle(flag), flag);*/
 
         return true;
     }
