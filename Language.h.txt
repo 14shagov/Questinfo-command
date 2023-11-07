@@ -1,0 +1,80 @@
+//COMMAND LANG (world_chat.cpp and cs_questinfo_custom.cpp)
+LANG_COMMAND_QUEST_INFO                       = 11103, 
+
+
+//QUEST INFO LANG (cs_questinfo_custom.cpp)
+//comments to each line mean the name of the column in the data base: quest_template
+LANG_QUESTINFO_ID                             = 11200, //ID
+LANG_QUESTINFO_TYPE                           = 11201, //QuestInfoID
+LANG_QUESTINFO_LEVEL                          = 11202, //QuestLevel
+LANG_QUESTINFO_MIN_LEVEL                      = 11203, //MinLevel
+//COMMAND LANG (cs_questinfo_custom.cpp)
+LANG_COMMAND_SPEEDUP_STATE                    = 11100, 
+LANG_COMMAND_POWERUP_STATE                    = 11101,
+LANG_COMMAND_CLEAR_BP                         = 11102,
+LANG_COMMAND_QUEST_INFO                       = 11103, 
+LANG_COMMAND_QUEST_INFO_FULL                  = 11104,
+
+//QUEST INFO LANG (cs_questinfo_custom.cpp)
+//comments to each line mean the name of the column in the data base: quest_template
+LANG_QUESTINFO_ID                             = 11200, //ID
+LANG_QUESTINFO_TYPE                           = 11201, //QuestInfoID
+LANG_QUESTINFO_LEVEL                          = 11202, //QuestLevel
+LANG_QUESTINFO_MIN_LEVEL                      = 11203, //MinLevel
+LANG_QUESTINFO_REW_NEXT_QUEST                 = 11204, //RewardNextQuest
+LANG_QUESTINFO_REW_XP                         = 11205, //RewardXPDifflculty
+LANG_QUESTINFO_REW_MONEY                      = 11206, //RewardMoney
+LANG_QUESTINFO_REW_MAXLVLMONEY                = 11207, //RewardBonusMoney
+LANG_QUESTINFO_REW_SPELL_CAST                 = 11208, //RewardSpell
+LANG_QUESTINFO_REW_HONOR                      = 11209, //RewardHonor
+LANG_QUESTINFO_START_ITEM                     = 11210, //StartItem
+LANG_QUESTINFO_FLAGS                          = 11211, //Flags
+LANG_QUESTINFO_NAME                           = 11212, //LogTitle
+LANG_QUESTINFO_PLAYER_KILL                    = 11213, //RequiredPlayerKills
+LANG_QUESTINFO_REW_ITEMID                     = 11214, //RewardItem(1 - 4)
+LANG_QUESTINFO_REW_ITEMID_COUNT               = 11215, //RewardAmount(1 - 4)
+LANG_QUESTINFO_REW_ITEMID_COUNT_ALL           = 11216, 
+LANG_QUESTINFO_ITEM_DROPID                    = 11217, //ItemDrop(1 - 4)
+LANG_QUESTINFO_ITEM_DROPID_QUANTITY           = 11218, //ItemDropQuantity(1 - 4)
+LANG_QUESTINFO_REW_CHOICE_ITEMID              = 11219, //RewardChoiceItemID(1 - 6)
+LANG_QUESTINFO_REW_CHOICE_ITEMID_COUNT        = 11220, //RewardChoiceItemQuantity(1 - 6)
+LANG_QUESTINFO_REW_CHOICE_ITEMID_COUNT_ALL    = 11221,
+
+LANG_QUESTINFO_POI_CONTINENT                  = 11222, //POIContinent
+LANG_QUESTINFO_POI_X                          = 11223, //POIx
+LANG_QUESTINFO_POI_Y                          = 11224, //POIy
+LANG_QUESTINFO_POI_OPT                        = 11225, //POIPriority
+LANG_QUESTINFO_REW_TITLE_ID                   = 11226, //RewardTitle
+LANG_QUESTINFO_REW_TALENTS                    = 11227, //RewardTalents
+LANG_QUESTINFO_REW_ARENA_POINTS               = 11228, //RewardArenaPoints
+
+LANG_QUESTINFO_REW_FAC_ID                     = 11229, //RewardFactionID
+LANG_QUESTINFO_REW_FAC_VALUE                  = 11230, //RewardFactionValue
+LANG_QUESTINFO_REW_FAC_OVERRIDE               = 11231, //RewardFactionOverride
+
+LANG_QUESTINFO_TIME_ALLOWED                   = 11232, //TimeAllowed
+LANG_QUESTINFO_ALLOWABLE_RACES                = 11233, //AllowableRaces        
+LANG_QUESTINFO_OBJECTIVES                     = 11234, //LogDescription
+LANG_QUESTINFO_DETAILS                        = 11235, //QuestDescription
+LANG_QUESTINFO_AREA_DESCRIPTION               = 11236, //AreaDescription
+LANG_QUESTINFO_COMPLETED_TEXT                 = 11237, //QuestCompletionLog 
+
+LANG_QUESTINFO_REQUIRED_NPC_OR_GO             = 11238, //RequiredNpcOrGo
+LANG_QUESTINFO_REQUIRED_NPC_OR_GO_COUNT       = 11239, //RequiredNpcOrGoCount
+LANG_QUESTINFO_REQUIRED_ITEM_ID               = 11240, //RequiredItemId
+LANG_QUESTINFO_REQUIRED_ITEM_COUNT            = 11241, //RequiredItemCount
+LANG_QUESTINFO_OBJECTIVE_TEXT                 = 11242, //ObjectiveText
+
+
+//tables creature_queststarter/ender gameobject_queststarter/ender
+LANG_QUESTINFO_CREATURE_STARTER               = 11243, 
+LANG_QUESTINFO_CREATURE_ENDER                 = 11244, 
+LANG_QUESTINFO_GO_STARTER                     = 11245, 
+LANG_QUESTINFO_GO_ENDER                       = 11246,
+
+    
+//tables quest_poi and quest_poi_points
+LANG_QUESTINFO_AREA_NUM_MAP_ID                = 11247, //AREA_NUM - Idx1 MAP_ID - MapID
+LANG_QUESTINFO_POI_X_Y                        = 11248, /// X Y
+
+LANG_QUESTINFO_STATUS                         = 11249

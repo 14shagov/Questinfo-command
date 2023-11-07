@@ -1,0 +1,3 @@
+QuestRelations* GetGOQuestInvolvedRelationMapHACK() { return &_goQuestInvolvedRelations; }
+QuestRelations* GetCreatureQuestInvolvedRelationMapHACK() { return &_creatureQuestInvolvedRelations; }
+

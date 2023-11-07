@@ -1,0 +1,159 @@
+/*********************************************************************\
+|* data for enum 'QuestFlags' in 'QuestDef.h' custom *|
+\*********************************************************************/
+
+template <>
+TC_API_EXPORT EnumText EnumUtils<QuestFlags>::ToString(QuestFlags value)
+{
+    switch (value)
+    {
+    case QUEST_FLAGS_NONE: return { "QUEST_FLAGS_NONE", "QUEST_FLAGS_NONE", "" };
+    case QUEST_FLAGS_STAY_ALIVE: return { "QUEST_FLAGS_STAY_ALIVE", "QUEST_FLAGS_STAY_ALIVE", "" };
+    case QUEST_FLAGS_PARTY_ACCEPT: return { "QUEST_FLAGS_PARTY_ACCEPT", "QUEST_FLAGS_PARTY_ACCEPT", "" };
+    case QUEST_FLAGS_EXPLORATION: return { "QUEST_FLAGS_EXPLORATION", "QUEST_FLAGS_EXPLORATION", "" };
+    case QUEST_FLAGS_SHARABLE: return { "QUEST_FLAGS_SHARABLE", "QUEST_FLAGS_SHARABLE", "" };
+    case QUEST_FLAGS_HAS_CONDITION: return { "QUEST_FLAGS_HAS_CONDITION", "QUEST_FLAGS_HAS_CONDITION", "" };
+    case QUEST_FLAGS_HIDE_REWARD_POI: return { "QUEST_FLAGS_HIDE_REWARD_POI", "QUEST_FLAGS_HIDE_REWARD_POI", "" };
+    case QUEST_FLAGS_RAID: return { "QUEST_FLAGS_RAID", "QUEST_FLAGS_RAID", "" };
+    case QUEST_FLAGS_TBC: return { "QUEST_FLAGS_TBC", "QUEST_FLAGS_TBC", "" };
+    case QUEST_FLAGS_NO_MONEY_FROM_XP: return { "QUEST_FLAGS_NO_MONEY_FROM_XP", "QUEST_FLAGS_NO_MONEY_FROM_XP", "" };
+    case QUEST_FLAGS_HIDDEN_REWARDS: return { "QUEST_FLAGS_HIDDEN_REWARDS", "QUEST_FLAGS_HIDDEN_REWARDS", "" };
+    case QUEST_FLAGS_TRACKING: return { "QUEST_FLAGS_TRACKING", "QUEST_FLAGS_TRACKING ", "" };
+    case QUEST_FLAGS_DEPRECATE_REPUTATION: return { "QUEST_FLAGS_DEPRECATE_REPUTATION   ", "QUEST_FLAGS_DEPRECATE_REPUTATION   ", "" };
+    case QUEST_FLAGS_DAILY: return { "QUEST_FLAGS_DAILY", "QUEST_FLAGS_DAILY    ", "" };
+    case QUEST_FLAGS_FLAGS_PVP: return { "QUEST_FLAGS_FLAGS_PVP", "QUEST_FLAGS_FLAGS_PVP", "" };
+    case QUEST_FLAGS_UNAVAILABLE: return { "QUEST_FLAGS_UNAVAILABLE", "QUEST_FLAGS_UNAVAILABLE", "" };
+    case QUEST_FLAGS_WEEKLY: return { "QUEST_FLAGS_WEEKLY", "QUEST_FLAGS_WEEKLY ", "" };
+    case QUEST_FLAGS_AUTOCOMPLETE: return { "QUEST_FLAGS_AUTOCOMPLETE", "QUEST_FLAGS_AUTOCOMPLETE", "" };
+    case QUEST_FLAGS_DISPLAY_ITEM_IN_TRACKER: return { "QUEST_FLAGS_DISPLAY_ITEM_IN_TRACKER", "QUEST_FLAGS_DISPLAY_ITEM_IN_TRACKER", "" };
+    case QUEST_FLAGS_OBJ_TEXT: return { "QUEST_FLAGS_OBJ_TEXT", "QUEST_FLAGS_OBJ_TEXT ", "" };
+    case QUEST_FLAGS_AUTO_ACCEPT: return { "QUEST_FLAGS_AUTO_ACCEPT", "QUEST_FLAGS_AUTO_ACCEPT", "" };
+    default: throw std::out_of_range("value");
+    }
+}
+
+template <>
+TC_API_EXPORT size_t EnumUtils<QuestFlags>::Count() { return 21; } 
+
+template <>
+TC_API_EXPORT QuestFlags EnumUtils<QuestFlags>::FromIndex(size_t index)//todo !!!
+{
+    switch (index)
+    {
+    case 0: return QUEST_FLAGS_NONE;
+    case 1: return QUEST_FLAGS_STAY_ALIVE;
+    case 2: return QUEST_FLAGS_PARTY_ACCEPT;
+    case 3: return QUEST_FLAGS_EXPLORATION;
+    case 4: return QUEST_FLAGS_SHARABLE;
+    case 5: return QUEST_FLAGS_HAS_CONDITION;
+    case 6: return QUEST_FLAGS_HIDE_REWARD_POI;
+    case 7: return QUEST_FLAGS_RAID;
+    case 8: return QUEST_FLAGS_TBC;
+    case 9: return QUEST_FLAGS_NO_MONEY_FROM_XP;
+    case 10: return QUEST_FLAGS_HIDDEN_REWARDS;
+    case 11: return QUEST_FLAGS_TRACKING;
+    case 12: return QUEST_FLAGS_DEPRECATE_REPUTATION;
+    case 13: return QUEST_FLAGS_DAILY;
+    case 14: return QUEST_FLAGS_FLAGS_PVP;
+    case 15: return QUEST_FLAGS_UNAVAILABLE;
+    case 16: return QUEST_FLAGS_WEEKLY;
+    case 17: return QUEST_FLAGS_AUTOCOMPLETE;
+    case 18: return QUEST_FLAGS_DISPLAY_ITEM_IN_TRACKER;
+    case 19: return QUEST_FLAGS_OBJ_TEXT;
+    case 20: return QUEST_FLAGS_AUTO_ACCEPT;
+    default: throw std::out_of_range("index");
+    }
+}
+
+template <>
+TC_API_EXPORT size_t EnumUtils<QuestFlags>::ToIndex(QuestFlags value)
+{
+    switch (value)
+    {
+    case QUEST_FLAGS_NONE: return 0;
+    case QUEST_FLAGS_STAY_ALIVE: return 1;
+    case QUEST_FLAGS_PARTY_ACCEPT: return 2;
+    case QUEST_FLAGS_EXPLORATION: return 3;
+    case QUEST_FLAGS_SHARABLE: return 4;
+    case QUEST_FLAGS_HAS_CONDITION: return 5;
+    case QUEST_FLAGS_HIDE_REWARD_POI: return 6;
+    case QUEST_FLAGS_RAID: return 7;
+    case QUEST_FLAGS_TBC: return 8;
+    case QUEST_FLAGS_NO_MONEY_FROM_XP: return 9;
+    case QUEST_FLAGS_HIDDEN_REWARDS: return 10;
+    case QUEST_FLAGS_TRACKING: return 11;
+    case QUEST_FLAGS_DEPRECATE_REPUTATION: return 12;
+    case QUEST_FLAGS_DAILY: return 13;
+    case QUEST_FLAGS_FLAGS_PVP: return 14;
+    case QUEST_FLAGS_UNAVAILABLE: return 15;
+    case QUEST_FLAGS_WEEKLY: return 16;
+    case QUEST_FLAGS_AUTOCOMPLETE: return 17;
+    case QUEST_FLAGS_DISPLAY_ITEM_IN_TRACKER: return 18;
+    case QUEST_FLAGS_OBJ_TEXT: return 19;
+    case QUEST_FLAGS_AUTO_ACCEPT: return 20;
+    default: throw std::out_of_range("value");
+    }
+}
+
+/*********************************************************************\
+|* data for enum 'QuestStatus' in 'QuestDef.h' custom *|
+\*********************************************************************/
+
+template <>
+TC_API_EXPORT EnumText EnumUtils<QuestStatus>::ToString(QuestStatus value)
+{
+    switch (value)
+    {
+    case QUEST_STATUS_NONE: return { "QUEST_STATUS_NONE", "QUEST_STATUS_NONE", "" };
+    case QUEST_STATUS_COMPLETE: return { "QUEST_STATUS_COMPLETE", "QUEST_STATUS_COMPLETE", "" };
+    //case QUEST_STATUS_UNAVAILABLE: return { "QUEST_STATUS_UNAVAILABLE", "QUEST_STATUS_UNAVAILABLE", "" };
+    case QUEST_STATUS_INCOMPLETE: return { "QUEST_STATUS_INCOMPLETE", "QUEST_STATUS_INCOMPLETE", "" };
+    //case QUEST_STATUS_AVAILABLE: return { "QUEST_STATUS_AVAILABLE", "QUEST_STATUS_AVAILABLE", "" };
+    case QUEST_STATUS_FAILED: return { "QUEST_STATUS_FAILED", "QUEST_STATUS_FAILED", "" };
+    case QUEST_STATUS_REWARDED: return { "QUEST_STATUS_REWARDED", "QUEST_STATUS_REWARDED", "" };
+    default: throw std::out_of_range("value");
+    }
+}
+
+template <>
+TC_API_EXPORT size_t EnumUtils<QuestStatus>::Count() { return 6; }
+
+template <>
+TC_API_EXPORT QuestStatus EnumUtils<QuestStatus>::FromIndex(size_t index)
+{
+    switch (index)
+    {
+    case 0: return QUEST_STATUS_NONE;
+    case 1: return QUEST_STATUS_COMPLETE;
+    //case 2: return QUEST_STATUS_UNAVAILABLE;
+    case 3: return QUEST_STATUS_INCOMPLETE;
+    //case 4: return QUEST_STATUS_AVAILABLE;
+    case 5: return QUEST_STATUS_FAILED;
+    case 6: return QUEST_STATUS_REWARDED;     
+    default: throw std::out_of_range("index");
+    }
+}
+
+template <>
+TC_API_EXPORT size_t EnumUtils<QuestStatus>::ToIndex(QuestStatus value)
+{
+    switch (value)
+    {
+    case QUEST_STATUS_NONE: return 0;
+    case QUEST_STATUS_COMPLETE: return 1;
+    //case QUEST_STATUS_UNAVAILABLE: return 2;
+    case QUEST_STATUS_INCOMPLETE: return 3;
+    //case QUEST_STATUS_AVAILABLE: return 4;
+    case QUEST_STATUS_FAILED: return 5;
+    case QUEST_STATUS_REWARDED: return 6;
+    default: throw std::out_of_range("value");
+    }
+}
+
+
+
+
+
+
+
+
