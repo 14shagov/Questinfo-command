@@ -30,7 +30,6 @@ static QuestRelationsIt FindQuestEnderAndStarter(QuestRelations* const relationM
     }
     return relationMap->end();
 }
-//qweqwe
 class questinfo_commandscript_custom : public CommandScript
 {
 public:
