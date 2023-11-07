@@ -33,9 +33,7 @@ Make sure that the numbers under which LANGs will be added are unoccupied(world 
 
 *Optional* <br/>
 
-**7.1** 
-
-If you want the command to output information about **creaturestarter/ender** and **gostarter/ender**, then you must copy the contents of the **ObjectMgr.h.txt** file and paste this into the **ObjectMgr.h** file as shown in the figure below<br/>
+**7.1** If you want the command to output information about **creaturestarter/ender** and **gostarter/ender**, then you must copy the contents of the **ObjectMgr.h.txt** file and paste this into the **ObjectMgr.h** file as shown in the figure below<br/>
 
 ![alt_tag](https://i.imgur.com/CFWad6z.png)<br/>
 
@@ -45,10 +43,9 @@ Then you can uncomment the lines shown below<br/>
 
 ***
 
-**7.2.** 
-
-If you want the command to output a list of status and a list of quest flags, then you must copy the contents of the enuminfo_QuestDef.cpp.txt file and add it to the end of the enuminfo_QuestDef.cpp file as shown in the figure below.
+**7.2.** If you want the command to output a list of status and a list of quest flags, then you must copy the contents of the enuminfo_QuestDef.cpp.txt file and add it to the end of the enuminfo_QuestDef.cpp file as shown in the figure below.
 (check to see if you already have this code in your core)
+
 ![alt_tag](https://i.imgur.com/2fF0yg4.png)<br/>
 
 After that you can uncomment the lines shown below
