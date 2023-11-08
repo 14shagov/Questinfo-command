@@ -57,7 +57,13 @@ After that you can uncomment the lines shown below
 **7.3** Open the TrinityCore.sln file again and build the solution. Click on **Build** and then **Build Solution**<br/>
 
 ***
+
 ## How to use  
+You need to type the command **.questinfo** and the **quest id** into the chat as shown in the pictures below. After that all information about this quest will be displayed in the chat room
+
+![alt_tag](https://i.imgur.com/Xmbvrrs.png) ![alt_tag](https://i.imgur.com/7QmstHB.png)<br/> 
+
+![alt_tag](https://i.imgur.com/6kIa1Ft.png) ![alt_tag](https://i.imgur.com/X2NyAaN.png)<br/> 
 
 
 
