@@ -51,3 +51,5 @@ INSERT INTO trinity_string (entry, content_default) VALUES
 (11247, 'Quest area: %u, mapID: %u'),
 (11248, 'POI x: %i  y: %i'),
 (11249, 'Status: %u %s');
+
+INSERT INTO command (name, help) VALUES ('questinfo', 'Syntax: .questinfo #quest_id');
