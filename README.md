@@ -54,6 +54,9 @@ After that you can uncomment the lines shown below
 
 ***
 
+**7.3** Open the TrinityCore.sln file again and build the solution. Click on **Build** and then **Build Solution**<br/>
+
+***
 ## How to use  
 
 
